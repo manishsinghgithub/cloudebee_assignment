@@ -7,7 +7,8 @@
 **How to run this project**
 After taking pull.
 
-build the application with gradle by command : gradle clean build
+build the application with gradle by command : **gradle clean build**
+
 After successfully build run the main application.
 
 
