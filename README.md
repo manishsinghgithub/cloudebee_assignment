@@ -13,4 +13,4 @@ After successfully build run the main application.
 
 
 **Use full Link to get apis**
-Swagger link: http://localhost:8080/swagger-ui/index.html#
+Swagger link: http://localhost:8080/swagger-ui/index.html
