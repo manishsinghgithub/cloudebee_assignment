@@ -59,6 +59,10 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ResponseDto updateProduct(Long id, UpdateProductRequestDto productRequestDto, DiscountType discountType) {
 
+        if(Objects.isNull(productRequestDto)){
+            ResponseDto.builder().message("Updated the product failed.").build();
+        }
+
         Product product = productRepository.findById(id).orElseThrow(
                 ()->new NotFoundException("Update product failed ! No product found with given id: "+id));
 
