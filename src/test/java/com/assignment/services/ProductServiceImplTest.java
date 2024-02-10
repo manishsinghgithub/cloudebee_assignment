@@ -1,4 +1,4 @@
-package com.assignment.servicestest;
+package com.assignment.services;
 
 
 import com.assignment.dto.ProductRequestDto;
