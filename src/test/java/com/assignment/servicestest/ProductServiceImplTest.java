@@ -124,7 +124,7 @@ public class ProductServiceImplTest {
 
     @Test
     @DisplayName("Update product test cases successful for discount")
-    public void updateProductTestCaseForSuccessful(){
+    public void updateProductTestCaseForSuccessfulDiscount(){
 
         Product product = new Product(1l,"name", "description",100.0d,40);
 
@@ -161,6 +161,15 @@ public class ProductServiceImplTest {
     }
 
 
+    @Test
+    @DisplayName("Update product unit test case for null request dto")
+    public void updateProductTestForException(){
+
+        ResponseDto responseDto = productService.updateProduct(1l, null, DiscountType.DISCOUNT);
+
+        Assertions.assertNotNull(responseDto);
+        Assertions.assertEquals("Updated the product failed.", responseDto.getMessage());
+    }
 
 
 }
